@@ -16,9 +16,10 @@
 
 class Mystring {
 public:
-    Mystring();
-    Mystring(const Mystring& orig);
-    virtual ~Mystring();
+    Mystring(); // no-args constructor
+    Mystring(char *s); // Overloaded constructor
+    Mystring(const Mystring& orig); // copy constructor
+    virtual ~Mystring(); // destructor
 private:
     char *str; // pointer to a char[] that holds a c-style string
 };
