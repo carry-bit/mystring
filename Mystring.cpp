@@ -47,11 +47,11 @@ Mystring::~Mystring() {
 // Implementing other methods
 
 void Mystring::display() const {
-
+    std::cout << str;
 }
 
 int Mystring::get_length() const {
-
+    
 }
 
 const char Mystring::get_str() const {
