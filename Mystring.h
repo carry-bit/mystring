@@ -20,7 +20,7 @@ public:
     Mystring(const Mystring& orig);
     virtual ~Mystring();
 private:
-
+    char *str; // pointer to a char[] that holds a c-style string
 };
 
 #endif /* MYSTRING_H */
