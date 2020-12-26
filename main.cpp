@@ -17,6 +17,16 @@ int main(int argc, char** argv) {
     Mystring larry("Larry"); // Call Overloaded constructor (str points to "Larry")
     Mystring stooge {larry}; // Copy constructor (new str is separate from orig.str)
     
+    empty.display();
+    cout << " has '" << empty.get_length() << "' chars." << endl;
+    
+    larry.display();
+    cout << " has '" << larry.get_length() << "' chars." << endl;
+    
+    stooge.display();
+    cout << " has '" << stooge.get_length() << "' chars." << endl;
+    
+    
     return 0;
 }
 
