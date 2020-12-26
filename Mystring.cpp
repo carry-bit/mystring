@@ -41,6 +41,7 @@ Mystring::Mystring(const Mystring& orig)
 }
 
 Mystring::~Mystring() {
+    delete [] str;
 }
 
 // Implementing other methods
