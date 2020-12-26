@@ -55,5 +55,5 @@ int Mystring::get_length() const {
 }
 
 const char Mystring::get_str() const {
-
+    return str;
 }
