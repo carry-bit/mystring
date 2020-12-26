@@ -25,7 +25,7 @@ Mystring::Mystring()
 Mystring::Mystring(char* s)
 : str{nullptr}
 {
-    if (s == nullptr) 
+    if (s == nullptr)
         Mystring();
     else {
         str = new char[std::strlen(s) + 1];
@@ -33,7 +33,11 @@ Mystring::Mystring(char* s)
     }
 }
 
-Mystring::Mystring(const Mystring& orig) {
+Mystring::Mystring(const Mystring& orig)
+: str{nullptr}
+{
+    str = new char[std::strlen(orig.str) + 1];
+    std::strcpy(this->str, orig.str);
 }
 
 Mystring::~Mystring() {
