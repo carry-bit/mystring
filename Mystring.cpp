@@ -11,6 +11,8 @@
  * Created on December 26, 2020, 11:02 PM
  */
 
+#include <cstring>
+#include <iostream>
 #include "Mystring.h"
 
 Mystring::Mystring() {
