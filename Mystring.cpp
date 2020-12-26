@@ -22,8 +22,15 @@ Mystring::Mystring()
     *str = '\0';
 }
 
-Mystring::Mystring(char* s) {
-
+Mystring::Mystring(char* s)
+: str{nullptr}
+{
+    if (s == nullptr) 
+        Mystring();
+    else {
+        str = new char[std::strlen(s) + 1];
+        std::strcpy(str, s);
+    }
 }
 
 Mystring::Mystring(const Mystring& orig) {
