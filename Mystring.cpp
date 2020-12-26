@@ -15,11 +15,15 @@
 #include <iostream>
 #include "Mystring.h"
 
-Mystring::Mystring() {
+Mystring::Mystring()
+: str{nullptr}
+{
+    str = new char[1];
+    *str = '\0';
 }
 
 Mystring::Mystring(char* s) {
-    
+
 }
 
 Mystring::Mystring(const Mystring& orig) {
