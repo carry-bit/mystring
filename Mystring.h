@@ -24,7 +24,7 @@ public:
 public:
     void display() const; // display str using std::cout
     int get_length() const; // returns length of str
-    const char get_str() const; // returns str
+    const char* get_str() const; // returns str
 private:
     char *str; // pointer to a char[] that holds a c-style string
 };

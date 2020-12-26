@@ -54,6 +54,6 @@ int Mystring::get_length() const {
     return std::strlen(str);
 }
 
-const char Mystring::get_str() const {
+const char* Mystring::get_str() const {
     return str;
 }
