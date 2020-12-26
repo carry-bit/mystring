@@ -16,6 +16,10 @@
 Mystring::Mystring() {
 }
 
+Mystring::Mystring(char* s) {
+    
+}
+
 Mystring::Mystring(const Mystring& orig) {
 }
 
